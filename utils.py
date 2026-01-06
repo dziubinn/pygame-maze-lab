@@ -1,11 +1,11 @@
-﻿import time
+import time
 from typing import Callable, Generator, Any
 
 # --- 4. Декоратори ---
 def debug_trace(func: Callable) -> Callable:
     """Декоратор, який виводить повідомлення про виклик функції."""
     def wrapper(*args, **kwargs):
-        # print(f"[TRACE] Виклик {func.__name__}") # Можна розкоментувати для дебагу
+        # print(f"[TRACE] Виклик {func.__name__}")
         return func(*args, **kwargs)
     return wrapper
 
